@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>admin / categories management</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootnavbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/faveIcon/favicon.png"/>
+    <style>
+        
+        /* sidebar-admin */
+        .sidebar-admin{
+            width: 4%;
+            height: 100vh;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px
+        }
+        .sidebar-admin ul li{margin-bottom: 8px;padding: 7px 0 7px 11px;}
+        .sidebar-admin ul li:hover{background-color: #646ECB;color: #000;cursor: pointer;}
+        .sidebar-admin ul li.active{border-left: 3px solid #646ECB}
+        .sidebar-admin ul li span{display: none;}
+        .sidebar-admin ul li img{width:25px;display: inline-block;margin-right: 10px;}
+        /* end sidebar-admin */
+        
+        /* admin header */
+        .admin-header{background-color: #474343;}
+        .admin-header h2{font-style: italic;text-align: center;}
+        .four-lines{width: 60%;margin: auto;}
+        .four-lines ul{list-style-type: none;padding: 0; margin: 0;}
+        .four-lines li{height: 2px; background-color: #fff;margin: 10px auto;}
+        .four-lines li:first-of-type{width: 100%;}
+        .four-lines li:nth-of-type(2){width: 60%;}
+        .four-lines li:nth-of-type(3){width: 20%;}
+        .four-lines li:last-of-type{width: 5%;}
+        .admin-header .det-list{
+            font-size: 1.3rem;
+            margin-top: 2%;
+            text-transform: capitalize;
+        } 
+        .admin-header .det-list li{transition: all 1s ease-in-out;padding-bottom: 10px;}
+        .admin-header .det-list li:hover{color: #646ECB;border-bottom: 3px solid #646ECB;cursor: pointer;}       
+        .admin-header .det-list li.active{border-bottom: 3px solid #646ECB;}    
+        /* admin header */
+        /* pagination */
+        .pagination{
+            width: 22%;
+            margin: 50px auto ;
+            padding-left: 23px;
+        }
+        .pagination a{
+            background-color: transparent;
+            border: 1px solid #646ECB;
+            color: #BFC5FC;
+        }
+        /* pagination */
+        .add-tab::not(:first-of-type){display: none;}
+        
+        /* category management */
+        .category-management{padding: 70px 0;}
+        .category-management button.adding-n-cat{
+            width: 200px;
+            height: 60px;
+            border: none;
+            cursor: pointer;
+        }
+        .category-management .categories .category{
+            background-color: #474343;
+            position: relative;
+            padding: 20px;
+        }
+        .category-management .categories .category input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            padding: 0 60px;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+        }
+        .category-management .categories .category i{
+            position: relative;
+            left: 15px;
+            top: 2px;
+        }
+        .category-management .categories .category a{
+            position: absolute;
+            right: 25px;
+            top: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- admin header  -->
+    <div class="admin-header py-3">
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="text-capitalize color-white">
+                        admin dashboard
+                        <div class="four-lines">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </h2>
+                </div>
+                <div class="col-md-9">
+                    <ul class="list-unstyled list-inline text-center det-list crad-tabe">
+                        <li class="list-inline-item color-white mx-5 active" data-crd=".cat-man">category management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- admin header  -->
+
+    <!-- categories administration -->
+    <div class="category-management">
+        <div class="container">
+            <button class="adding-n-cat bg-color2">Add New</button>
+            <div class="categories">
+                <div class="category my-5">
+                    <input type="text" value="Category Name">
+                    <i class="fas fa-pencil-alt color1"></i>
+                    <a href="#"><i class="fas fa-times color-white"></i></a>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="category my-5">
+                    <input type="text" value="Category Name">
+                    <i class="fas fa-pencil-alt color1"></i>
+                    <a href="#"><i class="fas fa-times color-white"></i></a>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="category my-5">
+                    <input type="text" value="Category Name">
+                    <i class="fas fa-pencil-alt color1"></i>
+                    <a href="#"><i class="fas fa-times color-white"></i></a>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="category my-5">
+                    <input type="text" value="Category Name">
+                    <i class="fas fa-pencil-alt color1"></i>
+                    <a href="#"><i class="fas fa-times color-white"></i></a>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="category my-5">
+                    <input type="text" value="Category Name">
+                    <i class="fas fa-pencil-alt color1"></i>
+                    <a href="#"><i class="fas fa-times color-white"></i></a>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="category my-5">
+                    <input type="text" value="Category Name">
+                    <i class="fas fa-pencil-alt color1"></i>
+                    <a href="#"><i class="fas fa-times color-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- categories administration -->
+
+    <!-- pagination -->
+
+    <ul class="pagination">
+        <li class="page-item">
+        <a class="page-link py-3 px-3 mx-1" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+        </a>
+        </li>
+        <li class="page-item"><a class="page-link py-3 px-3 mx-1" href="#">1</a></li>
+        <li class="page-item "><a class="page-link py-3 px-3 mx-1" href="#">2</a></li>
+        <li class="page-item "><a class="page-link py-3 px-3 mx-1" href="#">3</a></li>
+        <li class="page-item">
+        <a class="page-link py-3 px-3 mx-1" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+        </a>
+        </li>
+    </ul>
+
+    <!-- pagination -->
+    <!-- sidebar-admin -->
+
+    <div class="sidebar-admin bg-color3 color-black">
+        <ul class=" list-unstyled">
+            <li><img src="images/instructorDash/iconfinder_SEO_courses_training_flipchart_969264.svg" alt=""><span>Courses Adminstration</span></li>
+            <li class="active"><img src="images/instructorDash/Group 228.svg" alt=""><span>Categories Management</span></li>
+            <li><img src="images/instructorDash/iconfinder_student_309036.svg" alt=""><span>Student Management</span></li>
+            <li><img src="images/instructorDash/Group 35.svg" alt=""><span>instructor Management</span></li>
+        </ul>
+    </div>
+
+
+    <!-- sidebar-admin -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

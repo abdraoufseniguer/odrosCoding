@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>instructor Dashboard / performance</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootnavbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/faveIcon/favicon.png"/>
+    <style>
+        /* navbar icons */
+        .navbar .icons .p{padding-top: 17px;}
+        /* navbare profile */
+        .navbar .profile{
+            left: auto;
+            right: 0;
+            background-color: #BFC5FC;
+        }
+        .navbar .profile a{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar .profile a:hover{
+            background-color: #646ECB;
+        }
+        .navbar .profile a i{
+            padding-top: 5px;
+        }
+        /* go back to student dash */
+        a.backstd{
+            position: relative;
+            left: 80%;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            bottom: -40px;
+        }
+        a.backstd:hover{
+            text-decoration: none;
+        }
+        a.backstd::after{
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 98%;
+            margin-top: -10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent #e7e9fb;
+        }
+        /* go back to student dash */  
+        /* sidebare */
+        .sidebare{
+            width: 4%;
+            height: 100vh;
+            position: fixed;
+            top: 13%;
+            z-index: 1000;
+            padding-top: 50px
+        }
+        .sidebare ul li{margin-bottom: 8px;padding: 7px 0 7px 11px;}
+        .sidebare ul li:hover{background-color: #646ECB;color: #000;cursor: pointer;}
+        .sidebare ul li.active{border-left: 3px solid #646ECB}
+        .sidebare ul li span{display: none;}
+        .sidebare ul li img{width:25px;display: inline-block;margin-right: 10px;}
+        /* end sidebare */
+        
+        /* performances */
+
+        .performances{margin-top: 100px;position: relative;}
+        .performances .performance-list{margin-left: 4%;font-size: 1.2rem;}
+        .performances .performance-list li:hover{cursor: pointer;}
+        .performances .performance-list li.active{border-bottom: 3px solid #fff;}
+        .performances .rev h3.title{
+            width: 20%;
+            margin:  auto;
+            text-align: center;
+        }
+        .performances .rev h3.title::after{
+            content: "";
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+            height: 3px;
+            background-color: #474343;
+        }
+        .performances .rev p.revenu{
+           font-size: 1.3rem;
+           color: #474343;
+        }
+        .performances .rev p.revenu span{
+           color: #000;
+           font-weight: bold;
+        }
+        .performances .perfor-tab{margin: 100px 0 150px;}
+        .performances i{
+            position: absolute;
+        }
+        .performances .perfor-tab{
+            position: relative;
+        }
+        .performances .perfor-tab i{
+            position: absolute;
+        }
+        .performances .perfor-tab i.fa-caret-right{
+            bottom: -19%;
+            right: 40%;
+        }
+        .performances .perfor-tab i.fa-caret-left{
+            bottom: -19%;
+            left: 40%;
+        }
+        .performances .perfor-tab.std i.fa-caret-right,
+        .performances .perfor-tab.std i.fa-caret-left{
+           bottom: -5%;
+        }
+        .enr p {
+            font-size: 1.3rem;
+        }
+        .performances .perfor-tab:not(:first-of-type){display: none;}
+        .performances .enr h3.title{
+            width: 20%;
+            margin:  auto;
+            text-align: center;
+        }
+        .performances .enr h3.title::after{
+            content: "";
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+            height: 3px;
+            background-color: #474343;
+        }
+        .students .student-cart{border: 5px solid #646ECB; margin-bottom: 30px;}
+        .students .student-cart img{width: 100px;}
+        .students .student-cart ul li{
+            text-align: left;
+            text-indent: 30px;
+            font-size: 1.1rem;
+            padding: 20px 0px;
+            border-bottom: 1px solid #474343;
+        }
+        /* performances */
+    </style>
+</head>
+<body>
+    <!-- sidebare -->
+
+    <div class="sidebare bg-color3 color-black">
+        <ul class=" list-unstyled">
+            <li><img src="images/instructorDash/iconfinder_video-24_103168.svg" alt=""><span>courses</span></li>
+            <li><img src="images/instructorDash/iconfinder_237_professor_student_scientist_teacher_school_3957678.svg" alt=""><span>about instructor</span></li>
+            <li><img src="images/instructorDash/iconfinder_icons_Message_1564513.svg" alt=""><span>communication</span></li>
+            <li class="active"><img src="images/instructorDash/iconfinder_performance-clock-speed_353431 (1).svg" alt=""><span>performance</span></li>
+        </ul>
+    </div>
+
+
+    <!-- sidebare -->
+    <!-- Start Navebare  -->
+    
+    <nav class="navbar navbar-expand-lg main-nav navbar-dark " id="navbar">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/faveIcon/favicon.png" width="30" height="30" alt="logo">
+        </a>
+        <!-- logo -->
+        <!-- toggelabl items and links-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-capitalize p-rel" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/home page/Repeat Grid 1.svg" width="15" height="15" alt="categories icon" >
+                        categories
+                    </a>
+                    <ul class="dropdown-menu bg-color2 color3 main" aria-labelledby="navbarDropdown">
+                        <li  class="nav-item dropdown">
+                            <a class="dropdown-item dropdown-toggle text-capitalize p-rel" href="#" data-toggle="dropdown">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                devlopment
+                                <i class="fas fa-angle-right d-inline-block"></i>
+                            </a>
+                            <ul class="dropdown-menu text-capitalize bg-color2 color3">
+                                <li>
+                                    <a href="#" class="dropdown-item ">
+                                        <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                        all development
+                                    </a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">app devlopment</a></li>
+                                <li><a href="#" class="dropdown-item"> body development</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            design
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            marketing
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            it &amp; software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                            
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            health & fitnesse
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li>
+                            <a class="dropdown-item p-rel" href="#">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                teaching &amp; productivity
+                                <i class="fas fa-angle-right d-inline-block float-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 p-rel seggest">
+                <input class="form-control mr-sm-2 text-capitalize in-toggle " type="search" placeholder="Search for courses" aria-label="Search" id='search-courses'>
+                <i class="fas fa-search color1 i-left"></i>
+                <ul class="list-group list-unstyled ">
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item1</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item2</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item3</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item4</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item5</a></li>
+                </ul>
+            </form>
+            <!-- instructor courses notification profile -->
+            <ul class="navbar-nav ml-3 icons">
+                <li class="nav-item ">
+                  <a class="nav-link text-capitalize p" href="#" >
+                        <img src="images/navbar icons/iconfinder_237_professor_student_scientist_teacher_school_3957678.svg" width="25" height="25" alt="student icon" >                      
+                        instructor
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize p" href="myCourses.html">
+                        <img src="images/navbar icons/iconfinder_SEO_courses_training_flipchart_969264.svg" width="25" height="25" alt="my40 courses icon" >  
+                        my courses
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-capitalize p" href="viewCart.html">
+                        <img src="images/navbar icons/iconfinder_Basket_877012.svg" width="25" height="25" alt="notification icon" >
+                    </a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/navbar icons/Group 41.svg" width="60" height="50" alt="profile icon" >
+                  </a>
+                  <div class="dropdown-menu profile " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profileSetting.html" class=" text-capitalize">
+                        <span>profile</span>
+                        <i class="fas fa-user-circle color-black d-inline-block"></i>
+                    </a>
+                    <a class="dropdown-item" href="studentnotification.html" class=" text-capitalize">
+                        <span>notifications</span>
+                        <i class="far fa-bell"></i>
+                    </a>
+                    <a class="dropdown-item" href="additionalVideosAnwer.html" class=" text-capitalize">
+                        <span>additional videos</span>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="dropdown-item" href="index.html" class=" text-capitalize">
+                        <span>log out</span>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- End Navebare  -->
+
+    <!-- going back to the stdent dashboard -->
+
+    <a href="#" class="text-capitalize color-black bg-color3 backstd">go back to student dashboard</a>
+
+    <!-- going back to the stdent dashboard -->
+
+    <!-- performances -->
+    <div class="performances">
+        <ul class="list-unstyled list-inline performance-list ">
+            <li class="list-inline-item color3 text-capitalize mx-4 pb-3 active" data-per=".rev">revenue</li>
+            <li class="list-inline-item color3 text-capitalize mx-4 pb-3" data-per=".enr">enrollments</li>
+            <li class="list-inline-item color3 text-capitalize mx-4 pb-3" data-per=".std">students</li>
+            <li class="list-inline-item color3 text-capitalize mx-4 pb-3" data-per=".rat">rating</li>
+        </ul>
+        <div class="container">
+            <!-- tab 1 -->
+            <div class="perfor-tab rev py-4 px-4 bg-color3 color-black ">
+                <h3 class="text-capitalize title">this month</h3>
+                <p class="revenu text-capitalize">total revenue : <span> $200</span></p>
+                <ul class="list-unstyled">
+                    <li class="media mt-5">
+                      <img class="mr-3" src="images/instructorDash/Rectangle 134.svg" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h4 class="mt-0 mb-1 text-capitalize">the full name of the course goes here</h4>
+                        <h5 class="font-weight-bold mt-3">$50</h5>
+                      </div>
+                    </li>
+                    <li class="media mt-5">
+                        <img class="mr-3" src="images/instructorDash/Rectangle 134.svg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h4 class="mt-0 mb-1 text-capitalize">the full name of the course goes here</h4>
+                            <h5 class="font-weight-bold mt-3">$50</h5>
+                        </div>
+                    </li>
+                    <li class="media mt-5">
+                        <img class="mr-3" src="images/instructorDash/Rectangle 134.svg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h4 class="mt-0 mb-1 text-capitalize">the full name of the course goes here</h4>
+                            <h5 class="font-weight-bold mt-3">$50</h5>
+                        </div>
+                    </li>
+                </ul>
+                <i class="fas fa-caret-left fa-5x color1"></i>
+                <i class="fas fa-caret-right fa-5x color1"></i>
+            </div>
+            <!-- tab 2 -->
+            <div class="perfor-tab enr py-4 px-4 bg-color3 color-black ">
+                <h3 class="text-capitalize title">total enrolments</h3>
+                <p class=" text-capitalize ">total : <span class="color1"> $1000</span></p>
+                <ul class="list-unstyled">
+                    <li class="media mt-5">
+                        <img class="mr-3" src="images/instructorDash/Rectangle 134.svg" alt="Generic placeholder image">
+                        <div class="media-body">
+                        <h4 class="mt-0 mb-1 text-capitalize">the full name of the course goes here</h4>
+                        <h5 class="font-weight-bold mt-3 color1">$300</h5>
+                        </div>
+                    </li>
+                    <li class="media mt-5">
+                        <img class="mr-3" src="images/instructorDash/Rectangle 134.svg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h4 class="mt-0 mb-1 text-capitalize">the full name of the course goes here</h4>
+                            <h5 class="font-weight-bold mt-3 color1">$300</h5>
+                        </div>
+                    </li>
+                    <li class="media mt-5">
+                        <img class="mr-3" src="images/instructorDash/Rectangle 134.svg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h4 class="mt-0 mb-1 text-capitalize">the full name of the course goes here</h4>
+                            <h5 class="font-weight-bold mt-3 color1">$300</h5>
+                        </div>
+                    </li>
+                </ul>
+                <i class="fas fa-caret-left fa-5x color1"></i>
+                <i class="fas fa-caret-right fa-5x color1"></i>
+            </div>
+            <!-- tab 3 -->
+            <div class="perfor-tab std py-4 px-4  color-black ">
+                <div class="row students">
+
+                    <div class="col">
+                        <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                            <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                            <ul class="list-group list-unstyled">
+                                <li class= "text-capitalize">name</li>
+                                <li class="text-capitalize">course name</li>
+                                <li class="text-capitalize">12 / 05 / 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                            <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                            <ul class="list-group list-unstyled">
+                                <li class= "text-capitalize">name</li>
+                                <li class="text-capitalize">course name</li>
+                                <li class="text-capitalize">12 / 05 / 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                            <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                            <ul class="list-group list-unstyled">
+                                <li class= "text-capitalize">name</li>
+                                <li class="text-capitalize">course name</li>
+                                <li class="text-capitalize">12 / 05 / 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row students">
+
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                </div>
+
+                <div class="row students">
+
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                </div>
+
+                <div class="row students">
+
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                </div>
+
+                <div class="row students">
+
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="student-cart color-white bg-color2 text-center py-4 px-2">
+                                <img src="images/instructorDash/990460-200.png" widht = "100" alt="student image">
+                                <ul class="list-group list-unstyled">
+                                    <li class= "text-capitalize">name</li>
+                                    <li class="text-capitalize">course name</li>
+                                    <li class="text-capitalize">12 / 05 / 2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                </div>
+                
+                <i class="fas fa-caret-left fa-5x color1"></i>
+                <i class="fas fa-caret-right fa-5x color1"></i>
+
+            </div>
+        </div>
+    </div>
+    <!-- performances -->
+
+    <!-- footer -->
+    <footer class="text-capitalize color2 text-center py-5">
+        <h4>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 all rights reserved</h4>
+    </footer>
+    <!-- footer -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

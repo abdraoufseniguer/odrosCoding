@@ -1,0 +1,312 @@
+/* General Seting */
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+/* General Seting */
+/* navigation bar  */
+.main-nav{ border-bottom: 1px solid #646ecb;}
+.navbar-dark .navbar-nav .nav-link{color:#BFC5FC}
+.navbar-dark .navbar-nav .nav-link:hover{color:#E7E9FB}
+.main-nav .nav-item.dropdown .dropdown-toggle::after{display: none;}
+.main-nav .form-inline{ display: block; flex-grow: 1; position: relative;} 
+.main-nav .form-inline input{
+    width: 100%;
+    background-color:transparent;
+    border: 2px solid #BFC5FC;
+    border-radius: 0;
+    color: #BFC5FC;
+}
+.main-nav .form-inline i.i-left{
+    color: #646ECB;
+    position: absolute;
+    left: 97%;
+    bottom: 10px;
+}
+.navbar-dark .navbar-nav.logins .nav-link.login{
+    background-color: #474343;
+    border: 1px solid #646ECB;
+}
+.navbar-dark .navbar-nav.logins .nav-link.signUp{
+    background-color: #646ECB;
+    border: 1px solid #646ECB;
+}
+.navbar a.p-rel i{
+    position: absolute;
+    top: 37%;
+    left: 90%;
+     z-index: 10000;
+}
+.navbar .dropdown-menu{
+    min-width: 19rem;
+}
+.navbar .seggest ul{
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+    border-bottom-right-radius: 0.25rem; 
+    border-bottom-left-radius: 0.25rem; 
+    background-color: #BFC5FC!important;
+    display: none;
+}
+.navbar .seggest ul li.list-group-item{
+    border: none;
+    background-color: #BFC5FC!important;
+}
+.navbar .seggest ul li.list-group-item a{
+    color: #474343!important;
+}
+/* navigation bar  */
+/* interface */
+
+.interface{
+    background: url('../images/interface/Rectangle\ 5.svg') center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+.interface .overlay{
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.overlay .container-fluid,
+.overlay .container-fluid .interface-info{
+    height: 100%;
+}
+.overlay .container-fluid .interface-info form{position: relative;}
+.overlay .container-fluid .interface-info form input{
+    background-color: rgba(112, 112, 112, 0.5);
+    width: 45%;
+    border: none;
+    color: #BFC5FC
+}
+.overlay .container-fluid .interface-info form input::placeholder,
+.main-nav .form-inline input::placeholder{
+    color:#BFC5FC;
+}
+.overlay .container-fluid .interface-info form input:-ms-input-placeholder
+.main-nav .form-inline input:-ms-input-placeholder{
+    color:#BFC5FC;
+}
+.overlay .container-fluid .interface-info form input::-ms-input-placeholder
+.main-nav .form-inline input::-ms-input-placeholder{
+    color:#BFC5FC;
+}
+.overlay .container-fluid .interface-info form i{
+    position: absolute;
+    left: 43%;
+    bottom: 17px;
+}
+/* interface */
+
+/* courses sample */
+.sample-courses{padding: 50px 0 70px;border-bottom: 3px solid #646ecb;}
+.sample-courses h2::after{
+    content: '';
+    display: block;
+    width: 500px;
+    height: 3px;
+    margin: 20px auto 80px;
+    background-color: #646ECB;
+}
+.sample-courses .carousel .carousel-inner {height: 500px;}
+.sample-courses .carousel .carousel-inner .carousel-item {height: 100%;}
+.sample-courses .carousel .carousel-indicators{bottom: -35px;}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption {
+    height: 100%; 
+    display: flex; 
+    justify-content: space-between;
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card{
+    color: #BFC5FC;
+    background-color: transparent;
+    border: 1px solid #646ecb;
+    border-radius: 0;
+    
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .buy {z-index: 1000;}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .buy:hover .buy-overlay,
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .buy:hover .buy-icon{
+    display:block!important;  
+    cursor: pointer;
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .buy-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(256, 256, 256, 0.6);
+    z-index: 1001;
+    display: none;
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .buy-icon {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 1002;
+    display: none;
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate {
+    display: inline-block;
+    height: 27px;
+    padding: 0 10px;
+    padding-left: 0;
+    margin-left: -35px;
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:25px;
+    color: #BFC5FC;
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate > input:checked ~ label {
+    color: #646ecb;   
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate:not(:checked) > label:hover,
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate:not(:checked) > label:hover ~ label {
+    
+    color: rgb(166, 169, 191);
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate > input:checked ~ label:hover,
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate > input:checked ~ label:hover ~ label,
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card .rate > label:hover ~ input:checked ~ label {
+    color: rgb(166, 169, 190);
+}
+.sample-courses .carousel .carousel-inner .carousel-item .carousel-caption .card a{
+    display: block;
+    background-color: #646ecb;
+    margin-top: 32px;
+}
+/* couses sample */
+
+/* promo */
+.promo{background-color: rgba(154, 154, 148, 0.8);border-bottom: 3px solid #646ecb;}
+/* promo */
+/* pages-info */
+
+.pages-info{padding: 50px 0;}
+.pages-info .page{transition: transform 1s ease-in-out;}
+.pages-info .page1,
+.pages-info .page3{
+    transform: rotate(-15deg);
+}
+.pages-info .page2,
+.pages-info .page4{
+    transform: rotate(15deg);
+}
+.pages-info .page1:hover,
+.pages-info .page3:hover,
+.pages-info .page2:hover,
+.pages-info .page4:hover{
+    transform: rotate(0);
+    cursor: pointer;
+}
+.pages-info .divider{
+    width: 93%;
+    margin: 70px auto 0;
+    height: 1px;
+}
+/* pages-info */
+
+/* social media */
+
+.social-media{border-bottom: 1px solid #646ecb;}
+.social-media i:hover{color: #BFC5FC;}
+
+/* social media */
+
+/* footer */
+footer{border-bottom: 1px solid #646ecb;}
+/* footer */
+
+/* trigiring madal for sign in */
+
+.modal.modal1{
+    background-color: rgba(255, 255, 255, .6)
+}
+.modal.modal1 .modal-content{
+    background-color: rgba(0,0,0,.8);
+    color: #BFC5FC;
+}
+.modal.modal1 .modal-header{position: relative;border-bottom: 0;}
+.modal.modal1 .modal-header h3{flex-grow: 1;}
+.modal.modal1 .modal-header .close{
+    padding: 0;
+    margin: 0;
+    float: none;
+    position: absolute;
+    bottom: 35%;
+    left: 90%; 
+    color: #fff;
+    opacity: 1;
+}
+.modal.modal1 .modal-body a{
+    border: 1px solid #BFC5FC;
+    font-size: 1.1rem;
+    transition: all .5s ease;
+}
+.modal.modal1 .modal-body a:hover{
+    color: #646ecb;
+    text-decoration: none;
+    background-color: #474343;
+}
+.modal.modal1 .modal-body a i{
+    font-size: 1.3rem;
+}
+.modal.modal1 .modal-body .db-div{
+    width: 90%;
+    margin: auto;
+}
+.modal.modal1 .modal-body .db-div span{
+    height: 1px;
+    background-color: #646ECB;
+}
+.modal.modal1 .modal-body .login-form div{position: relative;}
+.modal.modal1 .modal-body .login-form input{background-color: transparent;}
+.modal.modal1 .modal-body .login-form i{
+    position: absolute;
+    bottom: 27%;
+    left: 5%;
+}
+.modal.modal1 .modal-body .login-form button{
+    width: 30%;
+    margin-left: 35%;
+}
+.modal.modal1 .modal-footer{
+    border-top: 0;
+}
+.modal.modal1 .modal-footer:hover{
+    text-decoration: none;
+}
+/* trigiring madal for sign in */
+
+/* framwork */
+.color1{color: #646ECB;}
+.bg-color1{background-color: #646ECB;}
+.color2{color: #BFC5FC;}
+.bg-color2{background-color: #BFC5FC;}
+.color3{color: #E7E9FB;}
+.bg-color3{background-color: #E7E9FB;}
+.color4{color: #474343;}
+.bg-color4{background-color: #474343!important;}
+.color-black{color: black;}
+.color-white{color: #fff;}
+.p-rel{position: relative;}
+/* framwork */

@@ -1,0 +1,78 @@
+/* navbar icons */
+.navbar .icons .p{padding-top: 17px;}
+/* navbare profile */
+.navbar .profile{
+    left: auto;
+    right: 0;
+    background-color: #BFC5FC;
+}
+.navbar .profile a{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .profile a:hover{
+    background-color: #646ECB;
+}
+.navbar .profile a i{
+    padding-top: 5px;
+}
+.center-line{
+    width: 40%;
+    height: 2px;
+    background-color: #646ECB;
+    margin: 1rem auto;
+}
+/* notifications & assignments */
+.notifications .nav-pills .nav-link {
+    background-color:#474343;
+    color: #fff;
+}
+.notifications .nav-pills .nav-link.active {
+    background-color:#6E6C6C;
+}
+.notifications .tab-content {max-height: 600px; overflow: auto;}
+.notifications .tab-content .media{padding-bottom: 40px;}
+.notifications .tab-content .media-body{
+    text-indent: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.notifications .tab-content .media-body form input[type="file"]{
+    opacity:0;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.notifications .tab-content .media-body form input[type="file"]:hover{cursor: pointer;}
+.notifications .tab-content .media-body form input[type="submit"]{
+    background-color: #ddd;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000;
+    border: none;
+}
+.notifications .tab-content .media-body form input[type="submit"]:hover{
+    background-color: #545050;
+    cursor: pointer;
+    color: #fff;
+}
+.custom-file{
+    width: 294px;
+    background-color: #ddd;
+    color: #000;
+    margin-right: 40px;
+    text-transform: capitalize;
+    position: relative;
+}
+.custom-file:hover{
+    color: #ddd;
+    background-color: #545050;
+}
+.custom-file span{
+    position: absolute;
+    top: 18%;
+    left: 37%;
+}   
+
+/* notifications & assignments */

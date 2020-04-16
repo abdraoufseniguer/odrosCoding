@@ -1,0 +1,109 @@
+ .center-line{
+     width: 40%;
+     height: 2px;
+     background-color: #E7E9FB;
+     margin: 1rem auto;
+ }
+ .profile-setings{
+     padding-top: 60px;
+     padding-bottom: 50px;
+    border-bottom: 1px solid #776f6f;
+ }
+ .profile-setings ul li a{
+     transition: all 0.5s ease-in-out;
+     font-size: 1.2rem;
+}
+ .profile-setings ul li a:hover, 
+ .profile-setings ul li a.active {
+     border-bottom: 3px solid #E7E9FB;
+ }
+ .profile-setings form.profile-info-form{
+    width: 75%;
+}
+.profile-setings form.profile-info-form input,
+.profile-setings form.profile-info-form select
+{
+    background-color: #545050;
+    border: none;
+    border-radius: 0;
+    color: #E7E9FB;
+}
+.profile-setings form.profile-info-form button{
+    border-radius: 0;
+    background-color: #ddd;
+    color: #000;
+    border: none;
+    position: absolute;
+    right: 125px;
+}
+.profile-setings .back{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.profile-setings .back a{
+    color: #000;
+    background-color: #E7E9FB;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-transform: capitalize;
+}
+.profile-setings .back a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #545050
+}
+.img-container
+{
+    width:62%;
+    height: 300px;
+    background-color: #ddd;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+.img-container img
+{
+    width: 100%;
+    height: 100%;
+}
+.profile-setings form.profile-picture-form{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.profile-setings form.profile-picture-form input[type="file"]{
+    opacity:0;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.profile-setings form.profile-picture-form input[type="file"]:hover{cursor: pointer;}
+.profile-setings form.profile-picture-form input[type="submit"]{
+    background-color: #ddd;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000;
+    border: none;
+}
+.profile-setings form.profile-picture-form input[type="submit"]:hover{
+    background-color: #545050;
+    cursor: pointer;
+    color: #fff;
+}
+.custom-file{
+    width: 294px;
+    background-color: #ddd;
+    color: #000;
+    margin-right: 40px;
+    text-transform: capitalize;
+    position: relative;
+}
+.custom-file:hover{
+    color: #ddd;
+    background-color: #545050;
+}
+.custom-file span{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+}   

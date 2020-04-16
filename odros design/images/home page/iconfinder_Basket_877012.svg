@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.642 96.642">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #646ecb;
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 2.613;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="iconfinder_Basket_877012" transform="translate(-1.129 -1.128)">
+    <path id="Path_56" data-name="Path 56" class="cls-1" d="M49.45,97.77A48.321,48.321,0,1,1,97.77,49.449,48.32,48.32,0,0,1,49.45,97.77" transform="translate(0)"/>
+    <path id="Path_57" data-name="Path 57" class="cls-1" d="M48.619,27.967a1.057,1.057,0,0,1-.124.309L39.436,43.3H57.8l-9.06-15.025a1.031,1.031,0,0,1-.123-.308m-.99-2.119a1.827,1.827,0,0,1,.752.752,1.839,1.839,0,0,1,.518.411,1.034,1.034,0,0,0-.28.511,1.029,1.029,0,0,0-.473-.662.984.984,0,0,0-.3-.122V26.7A1.81,1.81,0,0,0,47.63,25.848ZM45.7,28.926a1.822,1.822,0,0,1-.533-.614,1.818,1.818,0,0,0,.775.212ZM73.849,44.518l20.329,20.3A48.351,48.351,0,0,1,52.56,96.844L28.01,72.268a5.192,5.192,0,0,0,3.371,1.226H65.859a5.214,5.214,0,0,0,3.687-1.514.711.711,0,0,0,.065-.061,6.823,6.823,0,0,0,1.858-3.88L71.473,68l2.848-21.25c0-.023.008-.047.01-.071a3.848,3.848,0,0,0,.028-.452ZM52.826,25.848,70.363,43.3H60.206L51.3,28.525c.968-.043,1.977-.871,1.74-1.822Z" transform="translate(0.831 0.765)"/>
+    <line id="Line_12" data-name="Line 12" class="cls-2" x2="11.338" transform="translate(60.938 45.143)"/>
+    <path id="Path_58" data-name="Path 58" class="cls-2" d="M70.142,43.822A1.805,1.805,0,0,1,72,46.061" transform="translate(2.135 1.321)"/>
+    <line id="Line_13" data-name="Line 13" class="cls-2" x1="2.854" y2="21.295" transform="translate(71.284 47.382)"/>
+    <path id="Path_59" data-name="Path 59" class="cls-2" d="M69.317,66.65c-.332,2.489-2.083,4.6-4.6,4.6" transform="translate(1.967 2.027)"/>
+    <path id="Path_60" data-name="Path 60" class="cls-2" d="M65.755,71.109H31.278" transform="translate(0.932 2.164)"/>
+    <path id="Path_61" data-name="Path 61" class="cls-2" d="M31.416,71.247c-2.513,0-4.263-2.1-4.6-4.6" transform="translate(0.795 2.027)"/>
+    <line id="Line_14" data-name="Line 14" class="cls-2" x1="2.854" y1="21.295" transform="translate(24.761 47.382)"/>
+    <path id="Path_62" data-name="Path 62" class="cls-2" d="M24.053,46.061a1.806,1.806,0,0,1,1.863-2.239" transform="translate(0.708 1.321)"/>
+    <line id="Line_15" data-name="Line 15" class="cls-2" x2="11.594" transform="translate(26.623 45.143)"/>
+    <line id="Line_16" data-name="Line 16" class="cls-2" x1="8.669" transform="translate(49.451 45.143)"/>
+    <line id="Line_17" data-name="Line 17" class="cls-2" x2="21.59" transform="translate(38.618 45.143)"/>
+    <line id="Line_18" data-name="Line 18" class="cls-2" x1="12.41" y1="20.583" transform="translate(50.456 28.555)"/>
+    <path id="Path_63" data-name="Path 63" class="cls-3" d="M51.066,24.957A1.889,1.889,0,1,0,52.4,27.27a1.89,1.89,0,0,0-1.336-2.313" transform="translate(1.471 0.735)"/>
+    <line id="Line_19" data-name="Line 19" class="cls-2" y1="20.581" x2="12.411" transform="translate(36.033 28.556)"/>
+    <path id="Path_64" data-name="Path 64" class="cls-3" d="M45.048,24.956a1.89,1.89,0,1,1-1.336,2.314,1.889,1.889,0,0,1,1.336-2.314" transform="translate(1.315 0.735)"/>
+    <line id="Line_20" data-name="Line 20" class="cls-2" y2="14.484" transform="translate(37.773 54.045)"/>
+    <line id="Line_21" data-name="Line 21" class="cls-2" y2="18.645" transform="translate(43.611 49.885)"/>
+    <line id="Line_22" data-name="Line 22" class="cls-2" y2="18.645" transform="translate(49.448 49.885)"/>
+    <line id="Line_23" data-name="Line 23" class="cls-2" y2="18.645" transform="translate(55.284 49.885)"/>
+    <line id="Line_24" data-name="Line 24" class="cls-2" y2="14.484" transform="translate(61.12 54.045)"/>
+    <line id="Line_25" data-name="Line 25" class="cls-2" x1="0.716" y2="14.486" transform="translate(66.245 54.045)"/>
+    <line id="Line_26" data-name="Line 26" class="cls-2" x2="0.887" y2="14.486" transform="translate(31.935 54.045)"/>
+  </g>
+</svg>

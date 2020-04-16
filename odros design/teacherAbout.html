@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>instructor Dashboard/about</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootnavbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/faveIcon/favicon.png"/>
+    <style>
+        /* navbar icons */
+        .navbar .icons .p{padding-top: 17px;}
+        /* navbare profile */
+        .navbar .profile{
+            left: auto;
+            right: 0;
+            background-color: #BFC5FC;
+        }
+        .navbar .profile a{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar .profile a:hover{
+            background-color: #646ECB;
+        }
+        .navbar .profile a i{
+            padding-top: 5px;
+        }
+        /* go back to student dash */
+        a.backstd{
+            position: relative;
+            left: 80%;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            bottom: -40px;
+        }
+        a.backstd:hover{
+            text-decoration: none;
+        }
+        a.backstd::after{
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 98%;
+            margin-top: -10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent #e7e9fb;
+        }
+        /* go back to student dash */
+        /* creating course */
+
+        .creating-course{
+            margin: 10% auto 0;
+            width: 60%;
+            padding: 25px;
+            background-color: #474343;
+        }
+        .creating-course .cr-course{
+            display: block;
+            width: 50%;
+            margin: 0 auto 30px;
+            padding: 10px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+        .creating-course .cr-course:hover{
+            background-color: #646ECB;
+            color: #BFC5FC;
+            text-decoration: none;
+        }
+        .creating-course span{
+            font-size: 1.5rem;
+            font-style: italic;
+            word-spacing: 2.1px;
+        }
+        .creating-course .cr-course-i{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #ddd;
+            margin-left: 10px;
+            border-radius: 15px;
+            margin-bottom: -15px;
+            position: relative;
+        }
+        .creating-course .cr-course-i i{
+            position: absolute;
+            font-size: 1.8rem;
+            top: 25%;
+            left: 43%;
+        }
+        /* creating course */
+        /* your courses */
+        .under-line-center::after{
+            content: '';
+            display: block;
+            width: 30%;
+            height: 3px;
+            margin: 20px auto 0;
+            background-color: #e7e9fb;
+        }
+        .my-courses-title{
+            width: 20%;
+            margin: 40px auto;
+        }
+        .courses .inst-course .card{
+            margin: auto;
+            border-radius: 0;
+            border: 3px solid #646ECB;
+            background-color: transparent;
+            margin-bottom: 60px;
+        }
+        .courses .inst-course .card a{
+            width: 80%;
+            margin: 10px auto;
+            background-color: #474343;
+            color: #BFC5FC;
+            padding: 10px;
+            border-radius: 0;
+        }
+        /* your courses */
+        /* pagination */
+        .pagination{
+            width: 22%;
+            margin: auto;
+            padding-left: 23px;
+        }
+        .pagination a{
+            background-color: transparent;
+            border: 1px solid #646ECB;
+            color: #BFC5FC;
+        }
+        /* sidebare */
+        .sidebare{
+            width: 4%;
+            height: 100vh;
+            position: fixed;
+            top: 13%;
+            z-index: 1000;
+            padding-top: 50px
+        }
+        .sidebare ul li{margin-bottom: 8px;padding: 7px 0 7px 11px;}
+        .sidebare ul li:hover{background-color: #646ECB;color: #BFC5FC;cursor: pointer;}
+        .sidebare ul li.active{border-left: 3px solid #646ECB}
+        .sidebare ul li span{display: none;}
+        .sidebare ul li img{width:25px;display: inline-block;margin-right: 10px;}
+
+         .course-desc h2{width: 50%; margin: 70px 0;}
+         .course-desc h2::after{
+            content: "";
+            width: 40%;
+            margin: 30px 0;
+            height: 3px;
+            display: block;
+            background-color: #BFC5FC;
+        }
+         .course-desc form textarea{
+            width: 100%;
+            resize: none;
+            border: none;
+            background-color: #474343;
+            margin-bottom: 20px;
+            color: #BFC5FC;
+            text-indent: 10px;
+        }
+         .course-desc .manipulation button{
+            background-color: #474343;
+            color: #BFC5FC;
+            width: 100px;
+            text-align: center;
+            text-transform: capitalize;
+            border-bottom: 5px solid #BFC5FC;
+            border-radius: 0;
+            margin-right: 20px;
+            font-size: 1.2rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+         .course-desc .manipulation button:hover{
+            background-color: #BFC5FC;
+            color: #474343;
+        }
+    </style>
+</head>
+<body>
+    <!-- sidebare -->
+
+    <div class="sidebare bg-color3 color-black">
+        <ul class=" list-unstyled">
+            <li class="active"><img src="images/instructorDash/iconfinder_video-24_103168.svg" alt=""><span>courses</span></li>
+            <li><img src="images/instructorDash/iconfinder_237_professor_student_scientist_teacher_school_3957678.svg" alt=""><span>about instructor</span></li>
+            <li><img src="images/instructorDash/iconfinder_icons_Message_1564513.svg" alt=""><span>communication</span></li>
+            <li><img src="images/instructorDash/iconfinder_performance-clock-speed_353431 (1).svg" alt=""><span>performance</span></li>
+        </ul>
+    </div>
+
+
+    <!-- sidebare -->
+    <!-- Start Navebare  -->
+    
+    <nav class="navbar navbar-expand-lg main-nav navbar-dark " id="navbar">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/faveIcon/favicon.png" width="30" height="30" alt="logo">
+        </a>
+        <!-- logo -->
+        <!-- toggelabl items and links-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-capitalize p-rel" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/home page/Repeat Grid 1.svg" width="15" height="15" alt="categories icon" >
+                        categories
+                    </a>
+                    <ul class="dropdown-menu bg-color2 color3 main" aria-labelledby="navbarDropdown">
+                        <li  class="nav-item dropdown">
+                            <a class="dropdown-item dropdown-toggle text-capitalize p-rel" href="#" data-toggle="dropdown">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                devlopment
+                                <i class="fas fa-angle-right d-inline-block"></i>
+                            </a>
+                            <ul class="dropdown-menu text-capitalize bg-color2 color3">
+                                <li>
+                                    <a href="#" class="dropdown-item ">
+                                        <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                        all development
+                                    </a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">app devlopment</a></li>
+                                <li><a href="#" class="dropdown-item"> body development</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            design
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            marketing
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            it &amp; software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                            
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            health & fitnesse
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li>
+                            <a class="dropdown-item p-rel" href="#">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                teaching &amp; productivity
+                                <i class="fas fa-angle-right d-inline-block float-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 p-rel seggest">
+                <input class="form-control mr-sm-2 text-capitalize in-toggle " type="search" placeholder="Search for courses" aria-label="Search" id='search-courses'>
+                <i class="fas fa-search color1 i-left"></i>
+                <ul class="list-group list-unstyled ">
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item1</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item2</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item3</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item4</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item5</a></li>
+                </ul>
+            </form>
+            <!-- instructor courses notification profile -->
+            <ul class="navbar-nav ml-3 icons">
+                <li class="nav-item ">
+                  <a class="nav-link text-capitalize p" href="#" >
+                        <img src="images/navbar icons/iconfinder_237_professor_student_scientist_teacher_school_3957678.svg" width="25" height="25" alt="student icon" >                      
+                        instructor
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize p" href="myCourses.html">
+                        <img src="images/navbar icons/iconfinder_SEO_courses_training_flipchart_969264.svg" width="25" height="25" alt="my40 courses icon" >  
+                        my courses
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-capitalize p" href="viewCart.html">
+                        <img src="images/navbar icons/iconfinder_Basket_877012.svg" width="25" height="25" alt="notification icon" >
+                    </a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/navbar icons/Group 41.svg" width="60" height="50" alt="profile icon" >
+                  </a>
+                  <div class="dropdown-menu profile " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profileSetting.html" class=" text-capitalize">
+                        <span>profile</span>
+                        <i class="fas fa-user-circle color-black d-inline-block"></i>
+                    </a>
+                    <a class="dropdown-item" href="studentnotification.html" class=" text-capitalize">
+                        <span>notifications</span>
+                        <i class="far fa-bell"></i>
+                    </a>
+                    <a class="dropdown-item" href="additionalVideosAnwer.html" class=" text-capitalize">
+                        <span>additional videos</span>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="dropdown-item" href="index.html" class=" text-capitalize">
+                        <span>log out</span>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- End Navebare  -->
+
+    <!-- going back to the stdent dashboard -->
+
+    <a href="#" class="text-capitalize color-black bg-color3 backstd">go back to student dashboard</a>
+
+    <!-- going back to the stdent dashboard -->
+    <section class="about-inst">
+        <div class="container">
+            <!-- adding experience -->
+
+            <div class="tab-content course-desc ">
+                <h2 class="color3 text-capitalize">add your experience</h2>
+                <form action="#" method="POST">
+                    <textarea name="description-content" id=""  rows="10"></textarea>
+                    <div class="form-group manipulation">
+                        <button type="submit" class="btn">Save</button>
+                        <button type="button" class="btn">Edit</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- adding experience -->
+
+            <!-- adding certificats -->
+
+            <div class="tab-content course-desc ">
+                    <h2 class="color3 text-capitalize">add your certificates</h2>
+                    <form action="#" method="POST">
+                        <textarea name="description-content" id=""  rows="10"></textarea>
+                        <div class="form-group manipulation">
+                            <button type="submit" class="btn">Save</button>
+                            <button type="button" class="btn">Edit</button>
+                        </div>
+                    </form>
+                </div>
+    
+            <!-- adding certificats -->
+        </div>
+    </section>
+ 
+    <!-- footer -->
+    <footer class="text-capitalize color2 text-center py-5">
+       <h4>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 all rights reserved</h4>
+    </footer>
+    <!-- footer -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

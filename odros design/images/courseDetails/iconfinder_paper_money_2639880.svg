@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.951 31.918">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #646ecb;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #646ecb;
+      }
+    </style>
+  </defs>
+  <g id="iconfinder_paper_money_2639880" transform="translate(-2 -3)">
+    <line id="Line_32" data-name="Line 32" class="cls-1" x2="29.574" transform="translate(4.689 9.377)"/>
+    <line id="Line_33" data-name="Line 33" class="cls-1" x2="24.197" transform="translate(7.377 4)"/>
+    <path id="Path_78" data-name="Path 78" class="cls-1" d="M33.918,30.82H4.344A1.345,1.345,0,0,1,3,29.476V13.344A1.345,1.345,0,0,1,4.344,12H33.918a1.345,1.345,0,0,1,1.344,1.344V29.476A1.345,1.345,0,0,1,33.918,30.82Z" transform="translate(0.344 2.754)"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-2" cx="2.689" cy="2.689" r="2.689" transform="translate(31.574 13.41)"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" class="cls-2" cx="2.689" cy="2.689" r="2.689" transform="translate(2 13.41)"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" class="cls-2" cx="2.689" cy="2.689" r="2.689" transform="translate(2 29.541)"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" class="cls-2" cx="2.689" cy="2.689" r="2.689" transform="translate(31.574 29.541)"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-2" cx="1.344" cy="1.344" r="1.344" transform="translate(28.886 22.82)"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" class="cls-2" cx="1.344" cy="1.344" r="1.344" transform="translate(7.377 22.82)"/>
+    <path id="Path_79" data-name="Path 79" class="cls-2" d="M13.035,25.754h6.684a6.311,6.311,0,0,0,2.035-4.7c0-3.341-2.408-6.049-5.377-6.049S11,17.709,11,21.049A6.311,6.311,0,0,0,13.035,25.754Z" transform="translate(3.098 3.787)"/>
+  </g>
+</svg>

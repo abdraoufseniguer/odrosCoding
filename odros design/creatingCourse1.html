@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>instructor Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootnavbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/faveIcon/favicon.png"/>
+    <style>
+        /* navbar icons */
+        .navbar .icons .p{padding-top: 17px;}
+        /* navbare profile */
+        .navbar .profile{
+            left: auto;
+            right: 0;
+            background-color: #BFC5FC;
+        }
+        .navbar .profile a{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar .profile a:hover{
+            background-color: #646ECB;
+        }
+        .navbar .profile a i{
+            padding-top: 5px;
+        }
+        /* go back to student dash */
+        a.backstd{
+            position: relative;
+            left: 90%;
+            padding: 10px;
+            border-radius: 30px;
+            text-align: center;
+            bottom: -40px;
+        }
+        a.backstd:hover{
+            text-decoration: none;
+        }
+        a.backstd::after{
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 98%;
+            margin-top: -10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent #e7e9fb;
+        }
+        /* go back to student dash */
+        
+        /* your courses */
+        .under-line-center::after{
+            content: '';
+            display: block;
+            width: 15%;
+            height: 3px;
+            margin: 20px auto 0;
+            background-color: #e7e9fb;
+        }
+        .cours-title{
+            width: 55%;
+            margin: 30px auto;
+        }
+        .cours-title input{
+            width: 100%;
+            background-color: #474343;
+            border: none;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .cours-title input::placeholder{color: #ddd;}
+        .counter{
+            position: absolute;
+            right: 14%;
+            top: 36%;
+        }
+        .counter span{
+            display: inline-block;
+            margin-left: -37px;
+        }
+        .step-number{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background-color: #646ECB;
+            color: #fff;
+            text-transform: capitalize;
+        }
+        .direction{overflow: hidden;}
+        .direction .back{
+            float: left;
+            padding: 10px;
+            background-color: #474343;
+            color: #ddd
+        }
+        .direction .next{
+            float: right;
+            padding: 10px;
+            background-color: #474343;
+            color: #ddd
+        }
+        .direction .back:hover,
+        .direction .next:hover{
+            color: #646ECB;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- title counter -->
+    <div class="counter">
+        <img src="images/instructorDash/Path 119.svg" alt="" width="50">
+        <span class="color-white text-bold">65</span>
+    </div>
+    
+    <!-- Start Navebare  -->
+    
+    <nav class="navbar navbar-expand-lg main-nav navbar-dark " id="navbar">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/faveIcon/favicon.png" width="30" height="30" alt="logo">
+        </a>
+        <!-- logo -->
+        <!-- toggelabl items and links-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-capitalize p-rel" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/home page/Repeat Grid 1.svg" width="15" height="15" alt="categories icon" >
+                        categories
+                    </a>
+                    <ul class="dropdown-menu bg-color2 color3 main" aria-labelledby="navbarDropdown">
+                        <li  class="nav-item dropdown">
+                            <a class="dropdown-item dropdown-toggle text-capitalize p-rel" href="#" data-toggle="dropdown">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                devlopment
+                                <i class="fas fa-angle-right d-inline-block"></i>
+                            </a>
+                            <ul class="dropdown-menu text-capitalize bg-color2 color3">
+                                <li>
+                                    <a href="#" class="dropdown-item ">
+                                        <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                        all development
+                                    </a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">app devlopment</a></li>
+                                <li><a href="#" class="dropdown-item"> body development</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            design
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            marketing
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            it &amp; software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                            
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            health & fitnesse
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li>
+                            <a class="dropdown-item p-rel" href="#">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                teaching &amp; productivity
+                                <i class="fas fa-angle-right d-inline-block float-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 p-rel seggest">
+                <input class="form-control mr-sm-2 text-capitalize in-toggle " type="search" placeholder="Search for courses" aria-label="Search" id='search-courses'>
+                <i class="fas fa-search color1 i-left"></i>
+                <ul class="list-group list-unstyled ">
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item1</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item2</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item3</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item4</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item5</a></li>
+                </ul>
+            </form>
+            <!-- instructor courses notification profile -->
+            <ul class="navbar-nav ml-3 icons">
+                <li class="nav-item ">
+                  <a class="nav-link text-capitalize p" href="#" >
+                        <img src="images/navbar icons/iconfinder_237_professor_student_scientist_teacher_school_3957678.svg" width="25" height="25" alt="student icon" >                      
+                        instructor
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize p" href="myCourses.html">
+                        <img src="images/navbar icons/iconfinder_SEO_courses_training_flipchart_969264.svg" width="25" height="25" alt="my40 courses icon" >  
+                        my courses
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-capitalize p" href="viewCart.html">
+                        <img src="images/navbar icons/iconfinder_Basket_877012.svg" width="25" height="25" alt="notification icon" >
+                    </a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/navbar icons/Group 41.svg" width="60" height="50" alt="profile icon" >
+                  </a>
+                  <div class="dropdown-menu profile " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profileSetting.html" class=" text-capitalize">
+                        <span>profile</span>
+                        <i class="fas fa-user-circle color-black d-inline-block"></i>
+                    </a>
+                    <a class="dropdown-item" href="studentnotification.html" class=" text-capitalize">
+                        <span>notifications</span>
+                        <i class="far fa-bell"></i>
+                    </a>
+                    <a class="dropdown-item" href="additionalVideosAnwer.html" class=" text-capitalize">
+                        <span>additional videos</span>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="dropdown-item" href="index.html" class=" text-capitalize">
+                        <span>log out</span>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- End Navebare  -->
+
+    <!-- going back to the stdent dashboard -->
+
+    <a href="#" class="text-capitalize color-black bg-color3 backstd">cancel</a>
+
+    <!-- going back to the stdent dashboard -->
+
+    <!-- your already created courses -->
+
+    <h2 class=" color-white text-capitalize text-center my-courses-title under-line-center mt-5">
+        give us a initial course title
+    </h2>
+    <div class="cours-title text-center mb-5">
+        <input type="text" class="d-block color-white text-capitalize" placeholder="ex:the complete web development course">
+        <h5 class="text-capitalize color3">you can change it later</h5>
+    </div>
+    
+    <!-- step number -->
+    <div class="step-number ml-4">
+        step<br>1
+    </div>
+    <!-- separator -->
+    <div class="under-line-center mt-5 mb-5"></div>
+    <!-- next back -->
+    <div class="direction container">
+        <a href="#" class="d-block color-white text-capitalize back">back</a>
+        <a href="#" class="d-block color-white text-capitalize next">next</a>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 87.824">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #474343;
+      }
+
+      .cls-2 {
+        fill: #bfc5fc;
+        font-size: 31px;
+        font-family: SegoeUI, Segoe UI;
+      }
+    </style>
+  </defs>
+  <g id="Group_41" data-name="Group 41" transform="translate(-1709 -46)">
+    <path id="Union_1" data-name="Union 1" class="cls-1" d="M-2706.041,253H-2734.5a35.5,35.5,0,0,1-35.5-35.5,35.5,35.5,0,0,1,35.5-35.5h85a35.5,35.5,0,0,1,35.5,35.5,35.5,35.5,0,0,1-35.5,35.5h-22.893l-16.824,16.824Z" transform="translate(4479 -136)"/>
+    <text id="AS" class="cls-2" transform="translate(1805 97)"><tspan x="-36.464" y="0">AS</tspan></text>
+  </g>
+</svg>

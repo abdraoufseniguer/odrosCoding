@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.938 48.939">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #646ecb;
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 2.613;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="iconfinder_Basket_877012" transform="translate(-1.129 -1.128)">
+    <path id="Path_56" data-name="Path 56" class="cls-1" d="M25.6,50.067A24.469,24.469,0,1,1,50.067,25.6,24.469,24.469,0,0,1,25.6,50.067"/>
+    <path id="Path_57" data-name="Path 57" class="cls-1" d="M38.446,26.921a.535.535,0,0,1-.063.157L33.8,34.685h9.3l-4.588-7.608a.522.522,0,0,1-.062-.156m-.5-1.073a.925.925,0,0,1,.381.381.931.931,0,0,1,.262.208.524.524,0,0,0-.142.259.521.521,0,0,0-.24-.335.5.5,0,0,0-.153-.062v-.018A.917.917,0,0,0,37.945,25.848Zm-.978,1.559a.923.923,0,0,1-.27-.311.921.921,0,0,0,.393.108Zm14.256,7.9L61.517,45.581A24.485,24.485,0,0,1,40.442,61.8L28.01,49.355a2.629,2.629,0,0,0,1.707.621H47.176a2.64,2.64,0,0,0,1.867-.767.36.36,0,0,0,.033-.031,3.455,3.455,0,0,0,.941-1.965l0-.018,1.442-10.761c0-.011,0-.024.005-.036a1.947,1.947,0,0,0,.014-.229ZM40.576,25.848l8.881,8.837H44.314L39.8,27.2c.49-.022,1-.441.881-.922Z" transform="translate(-12.848 -11.815)"/>
+    <line id="Line_12" data-name="Line 12" class="cls-2" x2="5.742" transform="translate(31.416 23.417)"/>
+    <path id="Path_58" data-name="Path 58" class="cls-2" d="M70.142,43.822a.914.914,0,0,1,.943,1.134" transform="translate(-32.984 -20.405)"/>
+    <line id="Line_13" data-name="Line 13" class="cls-2" x1="1.445" y2="10.784" transform="translate(36.655 24.551)"/>
+    <path id="Path_59" data-name="Path 59" class="cls-2" d="M67.048,66.65a2.473,2.473,0,0,1-2.327,2.328" transform="translate(-30.393 -31.316)"/>
+    <path id="Path_60" data-name="Path 60" class="cls-2" d="M48.737,71.109H31.278" transform="translate(-14.41 -33.447)"/>
+    <path id="Path_61" data-name="Path 61" class="cls-2" d="M29.147,68.978A2.471,2.471,0,0,1,26.82,66.65" transform="translate(-12.279 -31.316)"/>
+    <line id="Line_14" data-name="Line 14" class="cls-2" x1="1.445" y1="10.784" transform="translate(13.096 24.551)"/>
+    <path id="Path_62" data-name="Path 62" class="cls-2" d="M24.043,44.956a.915.915,0,0,1,.943-1.134" transform="translate(-10.947 -20.405)"/>
+    <line id="Line_15" data-name="Line 15" class="cls-2" x2="5.871" transform="translate(14.039 23.417)"/>
+    <line id="Line_16" data-name="Line 16" class="cls-2" x1="4.39" transform="translate(25.599 23.417)"/>
+    <line id="Line_17" data-name="Line 17" class="cls-2" x2="10.933" transform="translate(20.113 23.417)"/>
+    <line id="Line_18" data-name="Line 18" class="cls-2" x1="6.284" y1="10.423" transform="translate(26.108 15.017)"/>
+    <path id="Path_63" data-name="Path 63" class="cls-3" d="M49.892,24.925a.957.957,0,1,0,.677,1.171.957.957,0,0,0-.677-1.171" transform="translate(-22.73 -11.358)"/>
+    <line id="Line_19" data-name="Line 19" class="cls-2" y1="10.422" x2="6.285" transform="translate(18.804 15.017)"/>
+    <path id="Path_64" data-name="Path 64" class="cls-3" d="M44.357,24.924A.957.957,0,1,1,43.68,26.1a.957.957,0,0,1,.677-1.172" transform="translate(-20.321 -11.357)"/>
+    <line id="Line_20" data-name="Line 20" class="cls-2" y2="7.334" transform="translate(19.685 27.925)"/>
+    <line id="Line_21" data-name="Line 21" class="cls-2" y2="9.442" transform="translate(22.641 25.818)"/>
+    <line id="Line_22" data-name="Line 22" class="cls-2" y2="9.442" transform="translate(25.597 25.818)"/>
+    <line id="Line_23" data-name="Line 23" class="cls-2" y2="9.442" transform="translate(28.553 25.818)"/>
+    <line id="Line_24" data-name="Line 24" class="cls-2" y2="7.334" transform="translate(31.508 27.925)"/>
+    <line id="Line_25" data-name="Line 25" class="cls-2" x1="0.363" y2="7.335" transform="translate(34.103 27.925)"/>
+    <line id="Line_26" data-name="Line 26" class="cls-2" x2="0.449" y2="7.335" transform="translate(16.729 27.925)"/>
+  </g>
+</svg>

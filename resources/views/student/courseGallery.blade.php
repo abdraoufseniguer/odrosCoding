@@ -1,0 +1,267 @@
+<!--
+==================== GDG Odros WebSite Project ====================
+Author : Abderraouf Seniguer
+spervisor : Yasser
+Copy Rights Reserved 2019 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>course intro</title>
+    <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="{{asset('css/bootnavbar.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/courseDetails.css')}}">
+    <link rel="shortcut icon" type="image/png" href="{{asset('storage/images/faveIcon/favicon.png')}}"/>
+    <style>
+        .course-video{height: 100vh; width: 100%;}
+        .course-video iframe{height: 100%; width: 100%;}
+        .fixed-menu{
+            position: fixed;
+            top: 0;
+            left: -350px;
+            width: 350px;
+            height: 100%;
+            color: white;
+            z-index: 100;
+        }
+        .fixed-menu .fixed-gear{
+            position: absolute;
+            right: -51px;
+            top: 135px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .fixed-menu section.accordion{margin: 0;}
+        .fixed-menu section.accordion{margin: 0;}
+        .fixed-menu section.accordion h3 {
+        padding: 30px;
+        cursor: pointer;
+        background-color: #646ecb;
+        border: none; 
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        border-bottom: 1px solid #707070;
+        }
+        .fixed-menu section.accordion ul {
+            padding: 0;
+            background-color: #E7E9FB;
+            border: none;  
+            margin-bottom: 0;
+        }
+        section.accordion ul li {
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border-bottom: 1px solid #707070;
+        }
+        section.accordion ul li a{
+            color: #707070!important;
+        }
+    </style>
+</head>
+<body>
+    <!--fixed menu-->
+    <div class="fixed-menu bg-color3">
+        <i class="fas fa-cog fa-2x fixed-gear bg-color3 color-black"></i>
+        
+        <section class="accordion">
+            <h3 class="text-capitalize bg-color1">
+                <i class="far fa-arrow-alt-circle-down color3"></i>
+                introduction to the course
+            </h3>
+            <ul class="list-unstyled">
+                <li class="text-capitalize">
+                    <i class="fas fa-file-alt color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal" role="banner">
+                        this is the file content 
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/iJW-YWqIL3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    {{-- <iframe  src="https://www.youtube.com/embed/3q7JOIk7nGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  --}}
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="text-capitalize">
+                    
+                    <i class="fas fa-play-circle color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal1" role="banner">
+                        this is the first video 
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/iJW-YWqIL3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="text-capitalize">
+                    
+                    <i class="fas fa-play-circle color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal2" role="banner">
+                        this is the secand video
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/iJW-YWqIL3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="text-capitalize">
+                    
+                    <i class="fas fa-play-circle color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal3" role="banner">
+                        this is the third video
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <iframe src="https://www.youtube.com/embed/iJW-YWqIL3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+            <!-- secand section -->
+            <h3 class="text-capitalize bg-color1">
+                
+                <i class="far fa-arrow-alt-circle-right color3"></i>
+                this is section two
+            </h3>
+            <ul class="list-unstyled">
+                <li class="text-capitalize">
+                    
+                    <i class="fas fa-play-circle color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal4" role="banner">
+                        this is the file content 
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <iframe  src="https://www.youtube.com/embed/3q7JOIk7nGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="text-capitalize">
+                    
+                    <i class="fas fa-play-circle color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal5" role="banner">
+                        this is the first video 
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <iframe  src="https://www.youtube.com/embed/3q7JOIk7nGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="text-capitalize">
+                    
+                    <i class="fas fa-play-circle color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal6" role="banner">
+                        this is the secand video
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <iframe  src="https://www.youtube.com/embed/3q7JOIk7nGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="text-capitalize">
+                    
+                    <i class="fas fa-play-circle color1 mr-2"></i>
+                    <a  data-toggle="modal" data-target="#exampleModal7" role="banner">
+                        this is the third video
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <iframe  src="https://www.youtube.com/embed/3q7JOIk7nGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                </div>
+                                <div class="modal-footer color1 text-center">
+                                    <span class="font-weight-bold">Enjoy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="course-video">
+        {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/pXVmnm9VEdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iJW-YWqIL3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="{{asset('js/bootnavbar.js')}}"></script>
+    <script src="{{asset('js/script.js')}}"></script>
+</body>
+</html>

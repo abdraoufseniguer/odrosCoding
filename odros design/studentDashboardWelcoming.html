@@ -1,0 +1,1049 @@
+<!--
+==================== GDG Odros WebSite Project ====================
+Author : Abderraouf Seniguer
+spervisor : Yasser
+Copy Rights Reserved 2019 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome to student dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootnavbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stdDashwel.css">
+    <link rel="shortcut icon" type="image/png" href="images/faveIcon/favicon.png"/>
+    <style>
+        .sample-courses{
+            border-bottom: none;
+            padding: 10px 0 30px;
+        }
+        .sample-courses h4{
+            padding-left: 100px;
+        }
+        .under-line-center::after{
+            content: '';
+            display: block;
+            width: 500px;
+            height: 3px;
+            margin: 20px auto 50px;
+            background-color: #646ECB;
+        }
+        /* navbar icons */
+        .navbar .icons .p{padding-top: 17px;}
+        /* navbare profile */
+        .navbar .profile{
+            left: auto;
+            right: 0;
+            background-color: #BFC5FC;
+        }
+        .navbar .profile a{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar .profile a:hover{
+            background-color: #646ECB;
+        }
+        .navbar .profile a i{
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Navebare  -->
+    
+    <nav class="navbar navbar-expand-lg main-nav navbar-dark " id="navbar">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/faveIcon/favicon.png" width="30" height="30" alt="logo">
+        </a>
+        <!-- logo -->
+        <!-- toggelabl items and links-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-capitalize p-rel" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/home page/Repeat Grid 1.svg" width="15" height="15" alt="categories icon" >
+                        categories
+                    </a>
+                    <ul class="dropdown-menu bg-color2 color3 main" aria-labelledby="navbarDropdown">
+                        <li  class="nav-item dropdown">
+                            <a class="dropdown-item dropdown-toggle text-capitalize p-rel" href="#" data-toggle="dropdown">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                devlopment
+                                <i class="fas fa-angle-right d-inline-block"></i>
+                            </a>
+                            <ul class="dropdown-menu text-capitalize bg-color2 color3">
+                                <li>
+                                    <a href="#" class="dropdown-item ">
+                                        <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                        all development
+                                    </a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">app devlopment</a></li>
+                                <li><a href="#" class="dropdown-item"> body development</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            design
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            marketing
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            it &amp; software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                            
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            software
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            health & fitnesse
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li><a class="dropdown-item p-rel" href="#">
+                            <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                            office productivity
+                            <i class="fas fa-angle-right d-inline-block "></i>
+                        </a></li>
+                        <li>
+                            <a class="dropdown-item p-rel" href="#">
+                                <img src="images/nav drop down/iconfinder_back-end_backward_programming_back_back_end_end_development_4047356.svg" class="pr-2 d-inline-block " width="30" height="30" alt="development icon" >
+                                teaching &amp; productivity
+                                <i class="fas fa-angle-right d-inline-block float-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 p-rel seggest">
+                <input class="form-control mr-sm-2 text-capitalize in-toggle " type="search" placeholder="Search for courses" aria-label="Search" id='search-courses'>
+                <i class="fas fa-search color1 i-left"></i>
+                <ul class="list-group list-unstyled ">
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item1</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item2</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item3</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item4</a></li>
+                    <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;item5</a></li>
+                </ul>
+            </form>
+            <!-- instructor courses notification profile -->
+            <ul class="navbar-nav ml-3 icons">
+                <li class="nav-item ">
+                  <a class="nav-link text-capitalize p" href="#" >
+                        <img src="images/navbar icons/iconfinder_237_professor_student_scientist_teacher_school_3957678.svg" width="25" height="25" alt="student icon" >                      
+                        instructor
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize p" href="#">
+                        <img src="images/navbar icons/iconfinder_SEO_courses_training_flipchart_969264.svg" width="25" height="25" alt="my40 courses icon" >  
+                        my courses
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-capitalize p" href="cartview.html>
+                        <img src="images/navbar icons/iconfinder_Basket_877012.svg" width="25" height="25" alt="notification icon" >
+                    </a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/navbar icons/Group 41.svg" width="60" height="50" alt="profile icon" >
+                  </a>
+                  <div class="dropdown-menu profile " aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profileSetting.html" class=" text-capitalize">
+                        <span>profile</span>
+                        <i class="fas fa-user-circle color-black d-inline-block"></i>
+                    </a>
+                    <a class="dropdown-item" href="studentnotification.html" class=" text-capitalize">
+                        <span>notifications</span>
+                        <i class="far fa-bell"></i>
+                    </a>
+                    <a class="dropdown-item" href="additionalVideosAnwer.html" class=" text-capitalize">
+                        <span>additional videos</span>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="dropdown-item" href="index.html" class=" text-capitalize">
+                        <span>log out</span>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- End Navebare  -->
+    
+    <!-- welcomming -->
+    <h2 class="h1 color2 mt-5 text-center text-capitalize under-line-center">welcome , abderraouf</h2>
+    <!-- welcomming -->
+
+    <!-- your courses -->
+
+    <section class="sample-courses">
+        
+        <h4 class="text-capitalize color3 mb-5  container">your courses</h4>
+        <!-- items slider -->
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="buy p-rel">
+                            <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                            <div class="buy-overlay "></div>
+                            <img src="images/home page/iconfinder_Basket_877012.svg" alt="buy cart" class="buy-icon" width="50" height="50">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- your courses -->
+
+    <!-- latest courses -->
+    <section class="sample-courses">
+        
+        <h4 class="text-capitalize color3 mb-5  container">latest couses</h4>
+        <!-- items slider -->
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- latest courses -->
+
+    <!-- best selling courses -->
+
+    <section class="sample-courses">
+        
+        <h4 class="text-capitalize color3 mb-5  container">best selling courses</h2>
+        <!-- items slider -->
+        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 1.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                          <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                          <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                          <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 2.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-flex">
+                    <!-- item one  -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item two -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                    <!-- item three -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/sample courses/Rectangle 3.svg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Here Goes The Name Of The course</h5>
+                            <p class="card-text text-left text-capitalize text-muted">instructor name</p>
+                            <!-- rating  -->
+                          <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                          
+                          <!-- rating  -->
+                          <span class=" d-inline-block mr-2">4.0</span><span>{5000}</span>
+                            <a href="#" class="btn btn-primary">&dollar;20</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- best selling courses -->
+    <!-- ingo pages -->
+
+    <section class="pages-info text-center">
+        <h2 class=" text-uppercase  color1 text-center display-1 mb-5"><span class=" color2">o</span>ur</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col page1 page"><h2 class="color2 text-capitalize">contact us</h2></div>
+                <div class="col page2 page"><h2 class=" color2 text-capitalize ">about us</h2></div>
+                <div class="col page3 page"><h2 class=" color2 text-capitalize ">conditions</h2></div>
+                <div class="col page4 page"><h2 class=" color2 text-capitalize">our blog</h2></div>
+            </div>
+            <div class="divider bg-color2"></div>
+        </div>
+    </section>
+
+    <!-- ingo pages -->
+
+    <!-- social media -->
+    <section class="social-media text-center pb-5">
+        <h2 class=" color2 text-capitalize text-bold">join us on</h2>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-square fa-2x color1"></i></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin fa-2x color1"></i></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter-square fa-2x color1"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square fa-2x color1"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-2x color1"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-square fa-2x color1"></i></a></li>
+        </ul>
+    </section>
+    <!-- social media -->
+    <!-- footer -->
+    <footer class="text-capitalize color2 text-center py-5">
+       <h4>copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 all rights reserved</h4>
+    </footer>
+    <!-- footer -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

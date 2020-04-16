@@ -1,0 +1,37 @@
+.center-line{
+    width: 40%;
+    height: 2px;
+    background-color: #BFC5FC;
+    margin: 1rem auto;
+}
+.checkout{
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #BFC5FC;
+}
+.checkout ul li a{
+    width: 120px;
+    background-color: #E7E9FB;
+    margin-right: 1.5rem;
+}
+.nav-pills .nav-link.active{
+    background-color: beige;
+}
+.checkout form input,
+.checkout form select,
+.checkout form select option,
+.checkout form input:focus,
+.checkout form select:focus
+{ background-color: transparent;}
+.checkout form input::placeholder,
+.checkout form select::placeholder{
+    color: #E7E9FB;
+}
+.checkout form .submit{display: flex;}
+.checkout form .submit input
+{
+    padding: 7px 25px;
+    border: 1px solid #E7E9FB;
+    margin: auto;
+    background-color: #474343;
+}

@@ -1,0 +1,102 @@
+/* navbare */
+/* navbar icons */
+.navbar .icons .p{padding-top: 17px;}
+/* navbare profile */
+.navbar .profile{
+    left: auto;
+    right: 0;
+    background-color: #BFC5FC;
+}
+.navbar .profile a{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .profile a:hover{
+    background-color: #646ECB;
+}
+.navbar .profile a i{
+    padding-top: 5px;
+}
+/* additional videos */
+.center-line{
+    width: 30%;
+    height: 2px;
+    background-color: #646ECB;
+    margin: 1rem auto;
+}
+.additional-videos-responses{
+    padding: 40px 20px;
+    background-color: #474343;
+}
+.additional-videos-responses .response-content{display: flex;}
+.additional-videos-responses .response-content .response-video{
+    flex-shrink: 1;
+    flex-basis: 54%;
+    background: url(../storage/images/student/videoAnswers/Rectangle27.svg) center center ;
+    background-size: cover;
+    position: relative;
+}
+.additional-videos-responses .response-content .response-video a{
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    left: 41%;
+    top: 25%;
+    background-color: rgba(256, 256, 256, 0.7);
+    border-radius: 5px;
+    transition: all 1s ease;
+
+}
+.additional-videos-responses .response-content .response-video a:hover{
+    transform: scale(0.8);
+}
+.additional-videos-responses .response-content .response-video a img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 38%;
+    left: 41%;
+}
+/* input file customization */
+.additional-videos-responses input[type="file"]{
+    opacity:0;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.additional-videos-responses input[type="file"]:hover{cursor: pointer;}
+.additional-videos-responses input[type="submit"]{
+    background-color: #ddd;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000;
+    border: none;
+}
+.additional-videos-responses input[type="submit"]:hover{
+    background-color: #545050;
+    cursor: pointer;
+    color: #fff;
+}
+.custom-file{
+    width: 294px;
+    background-color: #ddd;
+    color: #000;
+    margin-right: 40px;
+    text-transform: capitalize;
+    position: relative;
+}
+.custom-file:hover{
+    color: #ddd;
+    background-color: #545050;
+}
+.custom-file span{
+    position: absolute;
+    top: 19%;
+    left: 33%;
+}   
+.additional-videos-responses .upload{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+/* additional videos */

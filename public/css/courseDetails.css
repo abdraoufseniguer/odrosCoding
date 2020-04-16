@@ -1,0 +1,242 @@
+/* brief */
+
+.brief .brief-bar iframe{width: 100%;}
+.brief .brief-bar a{
+    border-color: #646ecb!important;
+}
+.brief .rate {
+    display: inline-block;
+    height: 26px;
+    padding-left: 0;
+}
+.brief .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.brief .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:25px;
+    color: #BFC5FC;
+}
+.brief .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.brief .rate > input:checked ~ label {
+    color: #646ecb;   
+}
+.brief .rate:not(:checked) > label:hover,
+.brief .rate:not(:checked) > label:hover ~ label {
+    
+    color: rgb(166, 169, 191);
+}
+.brief .rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.brief .rate > input:checked ~ label:hover,
+.brief .rate > input:checked ~ label:hover ~ label,
+.brief .rate > label:hover ~ input:checked ~ label {
+    color: rgb(166, 169, 190);
+}
+.brief .brief-content-box{
+    padding: 10px;
+    border: 1px solid #646ecb;
+}
+.brief .brief-bar a:hover{
+    text-decoration: none;
+}
+/* brief */
+/* course information */
+.nav-tabs a.nav-link:not(.nav-tabs .nav-link.active),
+.nav-tabs a.nav-link:hover
+{
+    color: #fff!important;
+    border-color: #007bff;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+}
+.nav-tabs .nav-link.active{
+    background-color: #000;
+    border-bottom: none;
+    color: #fff;
+    
+}
+
+/* course information */
+.tab-content .tab-content1 div{
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 2.2;
+    border-color: #646ecb!important;
+} 
+.tab-content .tab-pane .content ul {
+    margin-left: 40px;
+}
+.course-description,
+.course-content,
+.course-requirement,
+.about-instructor,
+.feedback{
+    border: 1px solid #646ecb;
+}
+/* accordion  */
+*{
+    margin:0;
+}
+section.accordion{
+    margin: 20px auto;
+    color: #fff;
+}
+section.accordion h3{
+    padding: 20px;
+    background-color: #000;
+    cursor: pointer;
+    border: 1px solid #646ecb;
+}
+section.accordion ul{
+    padding: 5px 0;
+    background-color: #000;
+    display:none;
+    border: 1px solid #BFC5FC;
+    margin-bottom: 30px;
+    margin-left: 0!important;
+}
+section.accordion ul li{
+    padding-left: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #BFC5FC; 
+}
+section.accordion ul li:last-of-type{
+    border: none;
+}
+section.accordion ul:first-of-type{
+    display: block;
+}
+
+section.accordion ul li a:hover{
+    cursor: pointer;
+}
+section.accordion ul .modal-body iframe{
+    width: 100%;
+    height: 300px;
+}
+section.accordion ul .modal-footer{
+    justify-content: center!important;
+}
+/* about instructor */
+.about-instructor img{
+    width: 120px;
+    border: 2px solid #646ecb;
+    border-radius: 19px;
+}
+.about-instructor p.content{
+    line-height: 2.8rem;
+    text-indent: 10px;
+    text-align: justify;
+}
+/* feedback */
+.feedback .media:not(:last-of-type){padding-bottom: 40px;}
+.feedback .media-body{
+    text-indent: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.center-line{
+    width: 40%;
+    height: 2px;
+    background-color: #646ECB;
+    margin: 1rem auto 6rem;
+}
+.feedback .rate {
+    display: inline-block;
+    height: 26px;
+    padding-left: 0;
+}
+.feedback .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.feedback .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:25px;
+    color: #BFC5FC;
+}
+.feedback .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.feedback .rate > input:checked ~ label {
+    color: #646ecb;   
+}
+.feedback .rate:not(:checked) > label:hover,
+.feedback .rate:not(:checked) > label:hover ~ label {
+    
+    color: rgb(166, 169, 191);
+}
+.feedback .rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.feedback .rate > input:checked ~ label:hover,
+.feedback .rate > input:checked ~ label:hover ~ label,
+.feedback .rate > label:hover ~ input:checked ~ label {
+    color: rgb(166, 169, 190);
+}
+@media (min-width: 576px) {
+    .brief .modal-dialog {
+        max-width: 900px;
+    }
+}
+.brief .card {
+    width: 18rem;
+    border: 2px solid #646ecb;
+    border-radius: 0;
+}
+.brief .modal-body {
+    background-color: #000;
+} 
+.brief .card-body{
+    background-color: #000;
+}
+.brief .card-body button.btn{
+    position: relative;
+    left: 40%;
+    background-color: #646ECB!important;
+}
+.modal-open .modal {
+    background-color: rgba(256, 256, 256,0.6);
+}
+.brief .goToCart{
+    padding: 60px 0;
+    border: 2px solid #646ecb;
+    min-height: 412px;
+}
+.brief .goToCart .center-line{
+   margin-bottom: 3rem;
+   margin-top: 3rem;
+}
+.brief .goToCart p,
+.brief .goToCart a{
+    font-size: 1.2rem;
+ }
+ .brief .goToCart a{
+    background-color: #646ECB;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 3px;
+ }
+ .brief .goToCart a:hover{
+    background-color: #BFC5FC;
+    color: #000;
+ }
+ .brief .modal-content{
+    padding: 35px;
+    background-color: #000;
+ }
